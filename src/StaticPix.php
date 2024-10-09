@@ -29,7 +29,7 @@ class StaticPix
     public static function generatePix($key, $idTx = '', $amount = 0.00, $description = '')
     {
         $result = "000201";
-        $result .= self::formatField("26", "0014br.gov.bcb.pix" . self::formatField("01", $key));
+        $result .= self::formatField("26", "0014br.gov.bcb.pix" . self::formatField("01", PixKey::formatKey($key)));
         $result .= "52040000"; // Fixed code
         $result .= "5303986";  // Currency (Real)
         if ($amount > 0) {
