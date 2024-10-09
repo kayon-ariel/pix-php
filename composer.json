@@ -19,7 +19,5 @@
             "name": "Kayon Ariel",
             "email": "kayonariel@gmail.com"
         }
-    ],
-    "minimum-stability": "stable",
-    "prefer-stable": true
+    ]
 }
