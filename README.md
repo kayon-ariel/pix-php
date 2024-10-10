@@ -1,6 +1,6 @@
 # PixPhp
 
-A PHP library for generating QR codes for PIX payments, including optional transaction descriptions.
+A PHP library to generate static PIX codes, facilitating online payments with PIX copy and paste.
 
 ![PHP Version](https://img.shields.io/badge/php-%3E%3D8.2-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
 

@@ -30,6 +30,12 @@ class StaticPix
     {
         $result = "000201";
         $result .= self::formatField("26", "0014br.gov.bcb.pix" . self::formatField("01", PixKey::formatKey($key)));
+
+        // Description field (if provided)
+        if (!empty($description)) {
+            $result .= self::formatField("02", $description);
+        }
+
         $result .= "52040000"; // Fixed code
         $result .= "5303986";  // Currency (Real)
         if ($amount > 0) {
@@ -39,12 +45,7 @@ class StaticPix
         $result .= "5901N";  // Name
         $result .= "6001C";  // City
 
-        // Description field (if provided)
-        if (!empty($description)) {
-            $result .= self::formatField("62", self::formatField("05", $idTx ?: '***') . self::formatField("50", $description));
-        } else {
-            $result .= self::formatField("62", self::formatField("05", $idTx ?: '***'));
-        }
+        $result .= self::formatField("62", self::formatField("05", $idTx ?: '***'));
 
         $result .= "6304"; // Start of CRC16
         $result .= self::calculateCRC16($result); // Add CRC16 at the end
