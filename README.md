@@ -2,7 +2,7 @@
 
 A PHP library to generate static PIX codes, facilitating online payments with PIX copy and paste.
 
-![PHP Version](https://img.shields.io/badge/php-%3E%3D8.2-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
+![PHP Version](https://img.shields.io/badge/php-%3E%3D8.2-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) [![Packagist Downloads](https://img.shields.io/packagist/dm/kayon-ariel/pix-php.svg?label=Packagist%20downloads)](https://packagist.org/packages/kayon-ariel/pix-php)
 
 ## Table of Contents
 
